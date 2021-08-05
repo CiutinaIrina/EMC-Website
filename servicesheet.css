@@ -1,0 +1,30 @@
+.container-services{
+    display:flex;
+}
+
+.container-chess, .container-consulting{
+    margin: 0 auto;
+}
+.container-consulting-title, .container-chess-title{
+    height: 35px;
+    width: 200px;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+.container-consulting-dropdown, .container-chess-dropdown{
+    display: none;
+    border: 1px solid grey;
+    width: 200px;
+    height: 320px;
+    position:fixed;
+}
+
+#main-page{
+    width:900px;
+    height:800px;
+}
+
+.second-title{
+    margin: 80px 0px 80px 0px;
+}
