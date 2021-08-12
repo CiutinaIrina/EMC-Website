@@ -1,30 +1,616 @@
-.container-services{
-    display:flex;
+a:link {
+  color: white;
+  text-decoration: none !important;
 }
-
-.container-chess, .container-consulting{
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: black !important;
+  text-decoration: none;
+}
+a:active {
+  color:black !important;
+  text-decoration: none;
+}
+a:hover .dropdown-list {
+  color: #55ec72 !important;
+  text-decoration: none;
+}
+a:active .dropdown-list {
+  color: #55ec72 !important;
+  text-decoration: none;
+}
+html{
+    height:100%;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+    background-color:rgb(220, 247, 243);
+}
+body{
+    height:100%;
+    width:100%;
+    background-color:rgb(220, 247, 243);
+}
+section{
+    background-color:rgb(220, 247, 243);
+}
+/*header part*/
+.strip{
+    background-color:#55ec72;
+    height:20px;
+}
+.info{
+    background-color: rgb(60,44,91);
+    height:100px;
+    border: 1px 1px 0px 1px solid grey;
+}
+#line2{
+    display:flex;
+    justify-content:space-between;
+    position: relative;
+}
+#logo{
+    height:80%;
+    width:150px;
+    background-color: rgb(60,44,91);
+    margin: 10px 10px 10px 10px;
+}
+#services{
+    height:80%;
+    width:800px;
+    background-color: rgb(60,44,91);
+    margin: 10px 10px 10px 10px;
+    list-style-type: none;
+    position:relative;
+    display: flex;
+}
+.service-type{
+    height:80%;
+    width:22%;
+    background-color: rgb(60,44,91);
+    color:white;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin: 10px;
+}
+#line2-1{
+    display:none;
+    height:50px;
+    width:100%;
+    background-color: rgb(60,44,91);
+    color:white;
+    border-top: 3px solid grey;
+    border-bottom: 3px solid grey;
+}
+.dropdown-list{
+    height:50px;
+    line-height: 40px;
+    margin: 15px;
+}
+.title{
+    background-color:#55ec72;
+    height:40px;
+    border-bottom: 3px solid grey;
+    text-align:center;
+    color:black;
     margin: 0 auto;
 }
-.container-consulting-title, .container-chess-title{
-    height: 35px;
-    width: 200px;
-    border: 1px solid grey;
-    text-align: center;
+#empty-box{
+    display:none;
 }
-
-.container-consulting-dropdown, .container-chess-dropdown{
-    display: none;
-    border: 1px solid grey;
-    width: 200px;
-    height: 320px;
-    position:fixed;
+/*end header*/
+/*begin section*/
+.menu{
+    background-color:rgb(220, 247, 243);
+    height:1700px;
 }
+#box2{
+    height:1700px;
+}
+#line4{
+    display:flex;
+}
+.col-list{
+    margin-top:40px;
+    width:50%;
+}
+#col-1 .option{
+    margin-left:auto;
+    margin-right:auto;
+}
+#col-2 .option{
+    margin-left:auto;
+    margin-right:auto;
+}
+.option{
+    height:20%;
+    width:75%;
+    background-color:rgb(220, 247, 243);
+    border: 1px solid grey;
+    margin:40px 0px 40px 40px;
+}
+.option-detail{
+    display:none;
+    height:80px;
+    width:100%;
+}
+.img-div{
+    width: 100%;
+    height: 100%;
+    position:relative;
+}
+figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color:white;
+    font-size:15px;
+    text-align: left;
+    margin: 0px 0px 20px 20px;
+}
+figcaption h3{
+    font-size:25px;
+}
+figcaption p{
+    height: 0;
+    overflow: hidden;
+    transition: height 0.8s ease;
+}
+/*end section
+begin footer*/
+footer{
+    background-color: rgb(60,44,91);
+}
+.additional{
+    border-top: 3px solid grey;
+    background-color:#55ec72;
+    height: 20px;
+}
+.contact{
+    background-color: rgb(60,44,91);
+    height: 250px;
+    display:flex;
+    justify-content:space-between;
+}
+.contact-info{
+    height:80%;
+    width:35%;
+    margin:20px;
+    background-color: rgb(60,44,91);
+    color: white;
+    text-align: left;
+}
+.links{
+    height:90%;
+    width:40%;
+    margin:20px;
+    background-color: rgb(60,44,91);
+    color: white;
+}
+#emc-links{
+    height:45%;
+    width:94%;
+    background-color: rgb(60,44,91);
+}
+#vmin-links{
+    height:45%;
+    width:94%;
+    background-color: rgb(60,44,91);
+}
+.m-1{
+    color:white;
+    background-color: rgb(60,44,91);
+}
+/*end section
+begin general styles*/
 
-#main-page{
-    width:900px;
+.box{
+    margin:0px;
+    padding-right:0px;
+    padding-left:0px;
+    width:100%;
+}
+.scroll{
+    overflow : scroll;
+}
+.no-point-list{
+    list-style-type: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.active{
+    display:block;
+}
+.display-flex{
+    display:flex;
+}
+/*stylesheet for despre-noi.html*/
+.profile-box{
+    height:40%;
+    width:100%;
+    margin:0 auto;
+    margin-top:2%;
+    display:inline-block;
+    text-align: left;
+}
+.profile-card{
+    background-color:  rgb(233, 252, 249);
+    height:31%;
+    width:98%;
+    margin:0 auto;
+    margin-top:1%;
+    display:flex;
+    max-height:240px;
+    border-bottom: 1px solid gray;
+}
+.profile-desc{
+    background-color:rgb(233, 252, 249);    
+    height:48%;
+    width:98%;
+    margin:0 auto;
+    margin-top:1%;
+    border-bottom: 1px solid gray;
+}
+.profile-contact{
+    background-color:rgb(233, 252, 249);
+    height:20%;
+    width:98%;
+    margin:0 auto;
+    margin-top:1%;
+    display:flex;
+    justify-content:space-between;
+    border-bottom: 1px solid gray;
+}
+.profile-portrait{
+    background-color:  rgb(233, 252, 249);
+    height:96.5%;
+    width:20%;
+    margin:3px;
+    max-height:200px;
+    max-width:175px;
+}
+.profile-info{
+    background-color: rgb(233, 252, 249);
+    height:96.5%;
+    width:70%;
+    margin:3px;
+    margin-left:50px;
+    justify-content:space-between;
+}
+.profile-info-list{
+    height:60%;
+    width:40%;
+    padding-left:50px;
+}
+.profile-picture{
+    background-color:rgb(233, 252, 249);
+    height:85%;
+    width:96.5%;
+    margin:3px;
+    margin-bottom:10px;
+    max-width:170px;
+    height:auto;
+}
+.profile-name{
+    background-color:rgb(233, 252, 249);
+    height:7%;
+    width:96.5%;
+    margin:3px;
+    margin-top:0px;
+    text-align:center;
+    max-height:20px;
+}
+.profile-contact .contact-info, .profile-contact .links, .profile-contact .ul{
+    background-color:rgb(233, 252, 249);
+    color:black;
+}
+.profile-contact .links{
+    width:20%;
+    margin:0 auto;
+    padding-top:14px;
+
+    height:100%;
+}
+.profile-contact .contact-info{
+    width:80%;
+}
+.profile-person-links{
+    text-align:center;
+}
+/*description box template*/
+.description-box{
     height:800px;
+    width:100%;
+    margin:0 auto;
+    margin-top:2%;
+    display:inline-block;
+    text-align: left;
+}
+.description-title{
+    height:3%;
+    width:98%;
+    background-color:  rgb(233, 252, 249);
+    border-bottom: 1px solid gray;
+    color:black;
+    margin:0 auto;
+    text-align:center;
+}
+.description-image{
+    /*background-color:  rgb(233, 252, 249);*/
+    height:500px;
+    width:98%;
+    margin:0 auto;
+    margin-top:1%;
+    /*border-bottom: 1px solid gray;*/
+}
+.description-picture{
+    height:500px;
+    width:50%;
+    margin: 0 auto;
+    vertical-align: middle;
+    margin-left:25%;
+}
+.description-text{
+    background-color:rgb(233, 252, 249);    
+    height:48%;
+    width:98%;
+    margin:0 auto;
+    margin-top:1%;
+    border-bottom: 1px solid gray;
+}
+.description-links{
+    background-color:rgb(233, 252, 249);
+    height:20%;
+    width:98%;
+    margin:0 auto;
+    margin-top:1%;
+    display:flex;
+    justify-content:space-between;
+    border-bottom: 1px solid gray;
+}
+.description-links .contact-info, .description-links .links, .description-links .ul{
+    background-color:rgb(233, 252, 249);
+    color:black;
+}
+.description-links .links{
+    width:20%;
+    margin:0 auto;
+    margin-top:14px;
+}
+.description-links .contact-info{
+    width:80%;
+
+}
+.profile-person-links{
+    text-align:center;
+}
+ul {
+  text-align: left;
+}
+/*table sheet*/
+.table-box{
+    margin:0 auto;
+    height:600px;
+    width:98%;
+}
+.table-title{
+    background-color:rgb(233, 252, 249);
+    border-bottom: 1px solid gray;
+    margin:0 auto;
+    width:98%;
+    height:30px;
+    margin-top:1%;
+}
+.table-desc{
+    background-color:rgb(233, 252, 249);
+    border-bottom: 1px solid gray;
+    margin:0 auto;
+    width:98%;
+    height:200px;
+    margin-top:1%;
+}
+.table-table{
+    background-color:rgb(233, 252, 249);
+    border-bottom: 1px solid gray;
+    margin:0 auto;
+    width:98%;
+    height:300px;
+    margin-top:1%;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.second-title{
-    margin: 80px 0px 80px 0px;
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/*list stylesheet*/
+.list-box{
+    width: 98%;
+    height:800px;
+    background-color:rgb(220, 247, 243);
+    margin:0 auto;
+    margin-top:2%;
+    display:flex;
+    text-align: left;
+}
+.list-left{
+    width:21%;
+    height:97%;
+    background-color:rgb(220, 247, 243);
+    margin:1% auto;
+    margin-right: 0;
+}
+.list-right{
+    width:75%;
+    height:97%;
+    background-color:rgb(220, 247, 243);
+    margin:1% auto;
+}
+.list-picture{
+    width:100%;
+    height:100%;
+    background-color:rgb(220, 247, 243);
+    margin:1% auto;
+}
+.list-image{
+    width:98%;
+    height:45%;
+    background-color:rgb(220, 247, 243);
+    margin:1% auto;
+}
+.list-title{
+    width: 98%;
+    height:5%;
+    background-color:rgb(233, 252, 249);
+    border-bottom: 1px solid gray;
+    margin:1% auto;
+    margin-top:0.5%;
+}
+.list-title h2{
+    margin-left:30px;
+}
+.list-entries p{
+    margin-left:30px;
+}
+.list-entries ul{
+    margin-left:40px;   
+}
+.list-entries li{
+    margin-top:30px;
+}
+.list-entries{
+    width: 98%;
+    height:91%;
+    background-color:rgb(233, 252, 249);
+    border-bottom: 1px solid gray;
+    margin:1% auto;
+}
+/*mini-elements*/
+.vertical-card{
+    height:10%;
+    width:25%;
+    background-color:rgb(233, 252, 249);
+    margin:0 auto;
+}
+.vertical-image{
+    height:100%;
+    width: 100%;
+    background-color:rgb(233, 252, 249);
+}
+.vertical-picture{
+    height:100%;
+    width: 100%;
+    background-color:rgb(233, 252, 249);
+}
+.vertical-desc{
+    height:50%;
+    width: 100%;
+    background-color:rgb(233, 252, 249);
+    border-bottom: 1px solid gray;
+}
+.vertical-image .description-picture{
+    height:100%;
+    width:100%;
+    margin:0;
+}
+.horizontal-card{
+    height:10%;
+    width:45%;
+    background-color:rgb(233, 252, 249);
+    display:flex;
+    margin:0 auto;
+}
+.horizontal-image{
+    height:100%;
+    width: 100%;
+    background-color:rgb(233, 252, 249);
+}
+.horizontal-picture{
+    height:100%;
+    width: 100%;
+    background-color:rgb(233, 252, 249);
+}
+.horizontal-desc{
+    height:100%;
+    width: 100%;
+    background-color:rgb(233, 252, 249);
+    border-bottom: 1px solid gray;
+}
+.horizontal-image .description-picture{
+    height:100%;
+    width:100%;
+    margin:0;
+}
+@media only screen and (max-width: 479px) {
+    /*Insert your mobile CSS in here!*/
+    #services{
+        display:none;
+    }
+    .service-type{
+        display:none;
+    }
+    #logo{
+        height:80%;
+        width:150px;
+        background-color: rgb(60,44,91);
+        margin: 10px 10px 10px 10px;
+    }
+    .menu{
+        background-color:rgb(220, 247, 243);
+        height:100%;
+        display:flex;
+    }
+    #line4{
+        display:block;
+    }
+    .col-list{
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:10px;
+        margin-bottom:10px;
+        background-color:rgb(220, 247, 243);
+    }
+    .option{
+        height:20%;
+        width:90%;
+        background-color: rgb(220, 247, 243);
+        border: 1px solid grey;
+        margin:15px;
+    }
+    body{
+        height:2500px;
+        overflow : scroll;
+    }
+    section{
+        height:84%;
+    }
+    footer{
+        height:10%;
+    }
+    header{
+        height:6%;
+    }
+}
+@media screen and (max-width: 320px) { 
+
+/*Write your css here*/
+
+}
+
+@media screen and (max-width: 800px) { 
+
 }

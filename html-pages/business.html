@@ -10,185 +10,162 @@
     <link data-link-ref rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACcUExURUxpcWK0KWGzKF2rJVOaIV6tJ1+vJ1OaIWW5KmK1KVypJWO2KWK1KVOaIWK0KGO2KVuoJGCwKFumJF6tJ1+vJ16tJ2KzKFijI2CxKGO2KWCxKFeiI2S5KlOaIWK0KV2sJWGyKF+vJ1mkJGCwJ2S4KlagI1+wJ2CwKGS4Kl6tJ2S4KWW5KmO1KV6tJ2GyKFijI1+uJ2CxKGGyKGW6Ko4fqckAAAAzdFJOUwC6rCIDVGsB/sgcys8Fv80WWhRDdqe7CoLPkQj3AsM1rVoMbvUKnY30NPL9yTOAB2V5rP4lLn8AAAAJcEhZcwAAADgAAAA4ARXTL58AAABrSURBVBjTY2AgHaiicnkZ1PT0EVwWEVEGTS0dXRhfXk5GmIHBQFvDkB3ElZZQ4VAGMdSNjTkV2RkEJY2NpSAajYyNjfm5gYSCLESruJgxGPApwQwT4gTxeQQQ1nExcRgzMqM4iJWNnYFcAAARPQlOwd2yOQAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==">
     <link data-link-ref rel="mask-icon" color="#1b54ce" href="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MzMuMzMzIiBoZWlnaHQ9IjkzMy4zMzMiIHZpZXdCb3g9IjAgMCA3MDAuMDAwMDAwIDcwMC4wMDAwMDAiPjxwYXRoIGQ9Ik0yLjYgMTY5LjdjLS4zIDEtLjEgMy42LjQgNS44LjUgMi4yLjkgNC4yIDEgNC41LjcgNi42IDEyIDI4LjQgMjUgNDcuOSA5LjQgMTQuMiA0NS4zIDYxLjkgNDkgNjUuMS4zLjMgNiA3IDEyLjcgMTUgNi42IDggMTMgMTUuNiAxNC4yIDE3IDEuMiAxLjQgMy4yIDMuNiA0LjMgNSA1LjYgNi42IDUzIDYwLjMgNTMuOSA2MSAuMy4zIDQuMyA0LjggOC44IDEwIDQuNiA1LjIgMTAuMiAxMS41IDEyLjUgMTQgMi4yIDIuNSA3LjUgOC4zIDExLjYgMTMgNC4xIDQuNiAxMC41IDExLjYgMTQuMSAxNS41IDMuNiAzLjggOSA5LjcgMTIgMTMgOSA5LjkgNDMuOSA0NC42IDUxLjggNTEuNSA0IDMuNiA3LjkgNyA4LjUgNy41IDIuNSAyLjQgMTUuNSAxMi40IDIxLjYgMTYuNyAxOC4yIDEyLjggMzUuMyAxOS45IDQ4LjggMjAgNC4yLjEgOC44LS4xIDEwLjItLjUgMjMuOS01LjcgNDYuOS0yMi40IDgyLjUtNTkuOSAxNy0xNy45IDI1LjItMjYuOSA0MC00My44IDYtNi45IDExLjItMTIuNyAxMS41LTEzIC4zLS4zIDUuMy01LjkgMTEtMTIuNSA1LjgtNi42IDExLTEyLjUgMTEuNS0xMy4xLjYtLjYgMy45LTQuNCA3LjUtOC41IDMuNi00IDcuNi04LjQgOC45LTkuOCAxLjMtMS41IDUuOC02LjQgMTAtMTEuMSA0LjItNC42IDkuOS0xMC45IDEyLjYtMTMuOSAyLjgtMy4xIDUuNS02LjEgNi02LjcgMS4zLTEuNCAxOS41LTIxLjMgMjEuNS0yMy40LjgtLjkgNC45LTUuNCA4LjktMTAgNC4xLTQuNyA4LTkgOC42LTkuNS41LS42IDMuMy0zLjcgNi02LjkgMi44LTMuMyA2LjEtNy4xIDcuNC04LjUgMS4zLTEuNCA0LjktNS44IDgtOS42IDMuMS0zLjkgNi4xLTcuNSA2LjctOCAxLjctMS42IDE3LjQtMjEuMyAyNS41LTMyIDI2LjEtMzQuNyA0MC41LTYwLjYgNDIuMi03Ni4yLjMtMy4zLjEtNC4zLTEuMi00LjYtNC43LTEuMS00MS43IDE2LjYtNzAuNSAzMy43LTcgNC4yLTEzIDcuNi0xMy4xIDcuNi0yLjQgMC0xMDguOSA2OS4zLTExOCA3Ni43LS41LjUtNC44IDMuNC05LjUgNi42LTQuNyAzLjItMTMuNyA5LjQtMjAgMTMuOC02LjMgNC40LTEyLjggOC45LTE0LjUgMTAtMS42IDEtMy43IDIuMy00LjUgMi45LTE5LjkgMTMuNS0yNi42IDE3LjktMzcuMSAyNC4zLTEyLjkgNy43LTI4LjcgMTUuOS0zNi45IDE5LTIxLjYgOC00MC4xIDUuNS03MS43LTkuOS0xMS41LTUuNi0zMy45LTE4LjctNDcuMy0yNy43LTEzLjItOC44LTczLjgtNTEuNC04Ny41LTYxLjQtMTguOC0xMy44LTY1LjEtNDUuMi05NS41LTY0LjgtMTEtNy4xLTMyLjgtMTkuMy00Ni42LTI2LjEtMTQuNS03LjEtMjEuOC05LTIyLjgtNS43eiIvPjwvc3ZnPg==">
     <meta name="theme-color" content="#1b54ce">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="servicesheet.css">
-    <link rel="stylesheet" type="text/css" href="emcstyle.css">
-    <script src="emc-display.js"></script>
+    <link rel="stylesheet" type="text/css" href="..\servicesheet.css">
+    <link rel="stylesheet" type="text/css" href="..\emcstyle.css">
+    <script src="..\emc-display.js"></script>
     <script>
     var init=function(){var e,r=(e={},new URLSearchParams(document.location.search).forEach(function(r,t){var o=decodeURIComponent(t),n=decodeURIComponent(r);if(o.endsWith("[]"))o=o.replace("[]",""),e[o]||(e[o]=[]),e[o].push(n);else{var a=o.match(/\[([a-z0-9_\/\s,.-])+\]$/g);a?(o=o.replace(a,""),a=a[0].replace("[","").replace("]",""),e[o]||(e[o]=[]),e[o][a]=n):e[o]=n}}),e),t=window.location.origin,o=function(e){return e=e.split("//")[1]},n=document.querySelector(".domain");if((!n.innerHTML&&t&&t.includes("//")||r.domain)&&(t=o(t),t=r.domain||t,n.innerText=t),t&&(t=o(t),document.title=t+" — "+document.title),r.title&&(document.querySelector(".default-title").innerText=r.title),r.message&&(document.querySelector(".message").innerText=r.message),r.error){var a=document.querySelector(".error"),c=document.querySelector(".error-message").querySelector("a");a.innerText=r.error,c.href=c.href.replace("$1",r.error)}document.querySelector(".veil-vm.bg").classList.add("bg-"+Math.floor(Math.random()*Math.floor(2)))};
     </script>
 </head>
+
 <body onload="init()" class="text-center scroll">
-    <header class="mb-auto">
-        <h5 class="strip box" id="line1"></h5>
-        <div class="info box" id="line2">
-            <div id="logo">
-                <a href="index.html"><img src="add_pics\logo.jpeg"></a>
+    <div class="cover-container d-flex h-100 mx-auto flex-column">
+        <header class="mb-auto">
+            <div class="veil">
+                <div class="veil-vm bg"></div>
+                <div class="veil-vm bg-white"></div>
             </div>
-            <div id="services">
-                <a class="service-type" href="html-pages\despre-noi.html" onmouseover="shineButton(this)" onmouseleave="normalButton(this)"><spam id="about">Despre Noi</spam></a>
-                <a class="service-type" href="html-pages\partners.html" onmouseover="shineButton(this)" onmouseleave="normalButton(this)"><spam id="partners">Parteneri de Afaceri</spam></a>
-                <spam onmouseover="shineButton(this)" onclick="toggleDetails(this)" onmouseleave="normalButton(this)" class="service-type" id="consulting">Consultanta</spam>
-                <a class="service-type" href="html-pages\suport.html" onmouseover="shineButton(this)" onmouseleave="normalButton(this)"><spam id="support">Suport</spam></a>
-                <a class="service-type" href="html-pages\chess.html" onmouseover="shineButton(this)" onmouseleave="normalButton(this)"><spam id="chess">Sah</spam></a>
-                <a class="service-type" href="html-pages\contact.html" onmouseover="shineButton(this)" onmouseleave="normalButton(this)"><spam id="contact">Contact</spam></a>
-            </div>
-            <div id="services-mobile">
+            <h5 class="strip box" id="line1"></h5>
+            <div class="info box" id="line2">
+                <div id="logo">
+                    <a href="..\index.html"><img src="..\add_pics\logo.jpeg"></a>
+                </div>
+                <div id="services">
+                    <a class="service-type" href="chess.html" onmouseover="shineButton(this)" onmouseleave="normalButton(this)"><spam id="chess">Sah</spam></a>
+                    <spam onmouseover="shineButton(this)" onclick="toggleDetails(this)" onmouseleave="normalButton(this)" class="service-type" id="consulting">Consultanta</spam>
+                    <a class="service-type" href="suport.html" onmouseover="shineButton(this)" onmouseleave="normalButton(this)"><spam id="support">Suport</spam></a>
+                    <a class="service-type" href="despre-noi.html" onmouseover="shineButton(this)" onmouseleave="normalButton(this)"><spam id="about">Despre Noi</spam></a>
+                </div>
+                <div id="services-mobile">
                     
+                </div>
             </div>
-        </div>
-        <div class="detail box" id="line2-1">
+            <div class="detail box" id="line2-1">
                 <div id="consulting-details" class="option-detail">
-                    <a href="html-pages\admin-imob.html"><spam class="dropdown-list">Administrare Imobiliara</spam></a>
-                    <a href="html-pages\inter-imob.html"><spam class="dropdown-list">Intermediere Imobiliara</spam></a>
-                    <a href="html-pages\fonduri-euro.html"><spam class="dropdown-list">Fonduri Europene</spam></a>
-                    <a href="html-pages\business.html"><spam class="dropdown-list">Business Management</spam></a>
-                    <a href="html-pages\HR.html"><spam class="dropdown-list">Soluții Resurse Umane</spam></a>
-                    <a href="html-pages\vanzari.html"><spam class="dropdown-list">Vânzări</spam></a>
+                    <a href="admin-imob.html"><spam class="dropdown-list">Administrare Imobiliara</spam></a>
+                    <a href="inter-imob.html"><spam class="dropdown-list">Intermediere Imobiliara</spam></a>
+                    <a href="fonduri-euro.html"><spam class="dropdown-list">Fonduri Europene</spam></a>
+                    <a href="business.html"><spam class="dropdown-list">Business Management</spam></a>
+                    <a href="HR.html"><spam class="dropdown-list">Soluții Resurse Umane</spam></a>
+                    <a href="vanzari.html"><spam class="dropdown-list">Vânzări</spam></a>
                 </div>
                 <div id="chess-detail" class="option-detail">surprise</div>
                 <div id="empty-detail" class="option-detail"></div>
-        </div>
-        <div class="detail box" id="empty-box"></div>
-        <div class="title box"></div>
-    </header>
-    <section class="box flex-grow-1 d-flex list-unstyled justify-content-center">
-        <div class="align-self-center text-center box" id="box2">
-            <div class="menu box" id="line4">
-                <div class="no-point-list col-list" id="col-1">
-                    <div class="option">
-                        <a href="html-pages\despre-noi.html"><div class="img-div" id="img-box-1" onmouseover="displayChild(this.children[1],1)" onmouseleave="hideChild(this.children[1],1)">
-                            <img src="add_pics\wait.png">
-                            <figcaption class="picture-over">
-                                <h3>Despre noi</h3>
-                                <p class="picture-desc">...</p>
-                            </figcaption>
-                        </div></a>
-                    </div>
-                    <div class="option">
-                        <a href="html-pages\admin-imob.html"><div class="img-div" id="img-box-2" onmouseover="displayChild(this.children[1],1)" onmouseleave="hideChild(this.children[1],1)">
-                            <img src="add_pics\wait.png">
-                            <figcaption class="picture-over">
-                                <h3>Administrare Imobiliara</h3>
-                                <p class="picture-desc">...</p>
-                            </figcaption>
-                        </div></a>
-                    </div>
-                    <div class="option">
-                        <a href="html-pages\inter-imob.html"><div class="img-div" id="img-box-3" onmouseover="displayChild(this.children[1],1)" onmouseleave="hideChild(this.children[1],1)">
-                            <img src="add_pics\wait.png">
-                            <figcaption class="picture-over">
-                                <h3>Intermediere Imobiliara</h3>
-                                <p class="picture-desc">...</p>
-                            </figcaption>
-                        </div></a>
-                    </div>
-                    <div class="option">
-                        <a href="html-pages\fonduri-euro.html"><div class="img-div" id="img-box-4" onmouseover="displayChild(this.children[1],1)" onmouseleave="hideChild(this.children[1],1)">
-                            <img src="add_pics\wait.png">
-                            <figcaption class="picture-over">
-                                <h3>Fonduri Europene</h3>
-                                <p class="picture-desc">...</p>
-                            </figcaption>
-                        </div></a>
-                    </div>
-                </div>
-                <div class="no-point-list col-list" id="col-2">
-                    <div class="option">
-                        <a href="html-pages\business.html"><div class="img-div" id="img-box-5" onmouseover="displayChild(this.children[1],1)" onmouseleave="hideChild(this.children[1],1)">
-                            <img src="add_pics\wait.png">
-                            <figcaption class="picture-over">
-                                <h3>Business Management</h3>
-                                <p class="picture-desc">...</p>
-                            </figcaption>
-                        </div></a>
-                    </div>
-                    <div class="option">
-                        <a href="html-pages\HR.html"><div class="img-div" id="img-box-6" onmouseover="displayChild(this.children[1],1)" onmouseleave="hideChild(this.children[1],1)">
-                            <img src="add_pics\wait.png">
-                            <figcaption class="picture-over">
-                                <h3>Soluții Resurse Umane</h3>
-                                <p class="picture-desc">...</p>
-                            </figcaption>
-                        </div></a>
-                    </div>
-                    <div class="option">
-                        <a href="html-pages\vanzari.html"><div class="img-div" id="img-box-7" onmouseover="displayChild(this.children[1],1)" onmouseleave="hideChild(this.children[1],1)">
-                            <img src="add_pics\wait.png">
-                            <figcaption class="picture-over">
-                                <h3>Vânzări</h3>
-                                <p class="picture-desc">...</p>
-                            </figcaption>
-                        </div></a>
-                    </div>
-                    <div class="option">
-                        <a href="html-pages\chess.html"><div class="img-div" id="img-box-8" onmouseover="displayChild(this.children[1],1)" onmouseleave="hideChild(this.children[1],1)">
-                            <img src="add_pics\chess.jpg">
-                            <figcaption class="picture-over">
-                                <h3>Sah</h3>
-                                <p class="picture-desc">Oferim infintari de cluburi si organizari de concursuri, cursuri si participarea la competitii.</p>
-                            </figcaption>
-                        </div></a>                    
+            </div>
+            <div class="detail-box" id="empty-box"></div>
+            <div class="title box">Business Solutions</div>
+        </header>
+        <section class="box flex-grow-1 d-flex list-unstyled justify-content-center">
+            <div class="align-self-center text-center box" id="box2">
+                <div class="main box">
+                    <div class="description-box">
+                        <div class="description-title">
+                            <p>Numele Rubricii</p>
+                        </div>
+                        <div class="description-image">
+                            <div class="img-div" onmouseover="displayChild(this.children[1],0)" onmouseleave="hideChild(this.children[1],0)">
+                                <img src="..\add_pics\stock1.webp" class="description-picture">
+                                <figcaption class="picture-over">
+                                    <p class="picture-desc">Generalitati</p>
+                                </figcaption>
+                            </div>
+
+                        </div>
+                        <div class="description-text">
+                            <p>Acestea sunt niste inforatii obisnuite despre rubrica descrisa in acest buletin.</p>
+                            Aici poti sa pui detalii si subcategorii
+                            <ul>
+                                <li>serviciul 1</li>
+                                <li>serviciul 1</li>
+                                <li>serviciul 1</li>
+                                <li>serviciul 1</li>
+                            </ul>
+                            <p>Aici sunt alte informatii mai putin importante</p>
+                        </div>
+                        <div class="description-links">
+                            <div class="contact-info">
+                                <h5>Contact (pt specialisti)</h5>
+                                <div class="no-point-list">
+                                    <p>domnulcutarescu@email.com - email<br>
+                                        +40 123 456 - telefon<br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="links">
+                                <div class="profile-person-links">
+                                    <h5>EMC links</h5>
+                                    <ul class="d-flex list-unstyled justify-content-center">
+                                        <li class="m-1">
+                                            <a href="https://www.linkedin.com/in/iulian-turcu/" target="_blank">
+                                                <img src="..\add_pics\social-media-buttons\linkedin.svg">
+                                            </a>
+                                        </li>
+                                        <li class="m-1">
+                                            <a href="https://www.facebook.com/people/Monday-Capital/100023290576891/" target="_blank">
+                                                <img src="..\add_pics\social-media-buttons\facebook.svg">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="bottom box">
-                    <!--<h1 class="error"></h1>
-                    <h1 class="error-message"><br><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/$1" target="_blank"><i class="vm vm-question"></i></a></h1>-->
+        </section>
+        <footer class="box">
+            <h5 class="additional box"></h5>
+            <div class="contact box">
+                <div class="contact-info">
+                    <h5>Contact</h5>
+                    <div class="no-point-list">
+                        <p>iulian@emcapital.ro - e-mail co-patron<br>
+                        telefon IT<br>
+                        Irina@emcapital.ro - e-mail web developer<br>
+                        telefon eu</p>
+                    </div>
+                </div>
+                <div class="links">
+                    <div id="emc-links">
+                        <h5>EMC links</h5>
+                            <ul class="d-flex list-unstyled justify-content-center">
+                                <li class="m-1">
+                                    <a href="https://www.linkedin.com/in/iulian-turcu/" target="_blank">
+                                        <img src="..\add_pics\social-media-buttons\linkedin.svg">
+                                    </a>
+                                </li>
+                                <li class="m-1">
+                                    <a href="https://www.facebook.com/people/Monday-Capital/100023290576891/" target="_blank">
+                                        <img src="..\add_pics\social-media-buttons\facebook.svg">
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div id="vmin-links">
+                        <h5>Virtualmin links</h5>
+                            <ul class="d-flex list-unstyled justify-content-center">
+                                <li class="m-1">
+                                    <a  href="https://youtube.com/virtualmin" target="_blank">
+                                        <img src="..\add_pics\social-media-buttons\youtube.svg">
+                                    </a>
+                                </li>
+                                <li class="m-1">
+                                    <a  href="https://twitter.com/virtualmin" target="_blank">
+                                        <img src="..\add_pics\social-media-buttons\twitter.svg">
+                                    </a>
+                                </li>
+                                <li class="m-1">
+                                    <a  href="https://facebook.com/virtualmin" target="_blank">
+                                        <img src="..\add_pics\social-media-buttons\facebook.svg">
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                    
             </div>
-        </div>
-    </section>
-    <footer class="box">
-        <h5 class="additional box"></h5>
-        <div class="contact box">
-            <div class="contact-info">
-                <h5>Contact</h5>
-                <div class="no-point-list">
-                    <p>iulian@emcapital.ro - e-mail Business Owner<br>
-                    telefon IT<br>
-                    Irina@emcapital.ro - e-mail web developer<br>
-                    telefon eu</p>
-                </div>
-            </div>
-            <div class="links">
-                <div id="emc-links">
-                    <h5>EMC links</h5>
-                        <ul class="d-flex list-unstyled justify-content-center">
-                            <li class="m-1">
-                                <a href="https://www.linkedin.com/in/iulian-turcu/" target="_blank">
-                                    <img src="add_pics\social-media-buttons\linkedin.svg">
-                                </a>
-                            </li>
-                            <li class="m-1">
-                                <a href="https://www.facebook.com/people/Monday-Capital/100023290576891/" target="_blank">
-                                    <img src="add_pics\social-media-buttons\facebook.svg">
-                                </a>
-                            </li>
-                        </ul>
-                </div>
-                <div id="vmin-links">
-                    <h5>Virtualmin links</h5>
-                        <ul class="d-flex list-unstyled justify-content-center">
-                            <li class="m-1">
-                                <a  href="https://youtube.com/virtualmin" target="_blank">
-                                    <img src="add_pics\social-media-buttons\youtube.svg">
-                                </a>
-                            </li>
-                            <li class="m-1">
-                                <a  href="https://twitter.com/virtualmin" target="_blank">
-                                    <img src="add_pics\social-media-buttons\twitter.svg">
-                                </a>
-                            </li>
-                            <li class="m-1">
-                                <a  href="https://facebook.com/virtualmin" target="_blank">
-                                    <img src="add_pics\social-media-buttons\facebook.svg">
-                                </a>
-                            </li>
-                        </ul>
-                </div>
-            </div>       
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
