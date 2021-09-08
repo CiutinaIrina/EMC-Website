@@ -331,7 +331,7 @@ img{
     text-align: left;
 }
 .description-title{
-    height:3%;
+    height:24px;
     width:98%;
     background-color:  rgb(233, 252, 249);
     border-bottom: 1px solid gray;
@@ -356,7 +356,7 @@ img{
 }
 .description-text{
     background-color:rgb(233, 252, 249);    
-    height:48%;
+    height:384px;
     width:98%;
     margin:0 auto;
     margin-top:1%;

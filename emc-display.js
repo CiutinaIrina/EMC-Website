@@ -5,6 +5,77 @@ function k(message = "Still Alive!") {
     alert(message);
 }
 
+function tec(element, clas) {
+    if (element.classList.contains(clas)) {
+        element.classList.remove(clas);
+    }
+    else {
+        element.classList.add(clas);
+    }
+}
+
+function flip(item) {
+    if (item.classList.contains("flip")) {
+        item.classList.remove("flip");
+        item.classList.add("rev");
+    }
+    else {
+        item.classList.remove("rev");
+        item.classList.add("flip");
+    }
+}
+
+function slideToggle(item) {
+    tec(item, "slideup");
+}
+
+function sendLink(link) {
+    tec(link, "green-link");
+}
+
+function alertButton(item) {
+    item.style.borderBottom = '5px solid #55ec72';
+    let writng = item.children[0];
+    writng.style.color = '#55ec72';
+}
+function normalButton(item) {
+    item.style.borderBottom = '5px solid rgb(60,44,91)';
+    let writng = item.children[0];
+    writng.style.color = 'white';
+}
+
+function showTableMenu() {
+    var menu = document.getElementById("menu-tabletop");
+    tec(menu, "hidden");
+}
+
+function getPictureByIndex(index) {
+    let id = "pic" + index;
+    let picture = document.getElementById(id);
+    return picture;
+}
+
+async function prevPicture(index) {
+    let prevIndex = index - 1;
+    if (index == 1) {
+        prevIndex = 9;
+    }
+    let current = getPictureByIndex(index);
+    let prev = getPictureByIndex(prevIndex);
+    prev.classList.remove("hidden");
+    current.classList.add("hidden");
+}
+async function nextPicture(index) {
+    let nextIndex = index + 1;
+    if (index == 9) {
+        nextIndex = 1;
+    }
+    let current = getPictureByIndex(index);
+    let next = getPictureByIndex(nextIndex);
+    next.classList.remove("hidden");
+    current.classList.add("hidden");
+}
+
 function displayElement(item) {
     if (item.style.display === "none") {
         item.style.display = "block";
@@ -40,43 +111,64 @@ function hideChild(item, tier) {
     hideElement(child);
 }
 
-function slide(item) {
-    item.__toggle = !item.__toggle;
-    var target = document.getElementById('hidden_content');
-    if( this.__toggle) {
-        target.style.height = target.scrollHeight+"px";
-        this.firstChild.nodeValue = "Hide content";
+
+function slideIn(item) {
+    item.classList.remove("slideup");
+    item.classList.add("slidedown");
+}
+function slideOut(item) {
+    item.classList.remove("slidedown");
+    item.classList.add("slideup");
+}
+function slideLeft(item) {
+    item.classList.remove("slideright");
+    item.classList.add("slideleft");
+}
+function slideRight(item) {
+    item.classList.remove("slideleft");
+    item.classList.add("slideright");
+}
+
+
+function toggleSlide(item){
+    if (item.classList.contains("slideleft")) {
+        slideRight(item)
     }
-    else {
-        target.style.height = 0;
-        this.firstChild.nodeValue = "Show content";
+    else if (item.classList.contains("slideright")) {
+        slideLeft(item)
     }
 }
 
-function shineButton(item) {
-    item.style.backgroundColor = "#55ec72";
-    item.style.color = "black";
-    item.style.borderColor = "black";
+function sendLink(link) {
+    if (link.classList.contains("green-link")) {
+        link.classList.remove("green-link");
+    } else {
+        link.classList.add("green-link");
+    }
+}
+
+
+
+function alertButton(item) {
+    item.style.borderBottom = '5px solid #55ec72';
+    let writng = item.children[0];
+    writng.style.color = '#55ec72';
 }
 function normalButton(item) {
-    item.style.backgroundColor = "rgb(60,44,91)";
-    item.style.color = "white";
-    item.style.borderColor = "white";
+    item.style.borderBottom = '5px solid rgb(60,44,91)';
+    let writng = item.children[0];
+    writng.style.color = 'white';
 }
 function showDetails(option) {
     let id = option.id;
     let detailId = id + "-details";
     let detail = document.getElementById(detailId);
-    let detailBox = document.getElementById("line2-1");
-    displayElement(detailBox);
     displayElement(detail);
 }
 function hideDetails(option) {
     let id = option.id;
     let detailId = id + "-details";
     let detail = document.getElementById(detailId);
-    let detailBox = document.getElementById("line2-1");
-    hideElement(detailBox);
     hideElement(detail);
 }
 
@@ -112,13 +204,96 @@ function clearOtherInstances(array, element) {
 }
 
 function swap(toShow, toHide) {
-    //here to show is the consulting div
-    //and the chess div is a sibling
-    //lets pick the only displaying sibling!
     toShow.style.display = 'block';
     toHide.style.display = 'none';
 }
-//on mouseover we display and on mouseleave we hide
-//problem elements are figcaption h3 and p
-//pick p for instance
-//first we make a function that displays only
+function showSubCategories(option) {
+    let id = option.id;
+    let detailId = id + "-details";
+    let detail = document.getElementById(detailId);
+    displayElement(detail);
+}
+
+
+
+function findActivePicture() {
+    for (i = 1; i <= 9; i++) {
+        let picture = getPictureByIndex(i);
+        if (picture.classList.contains("hidden") === false) {
+            return i;
+        }
+    }
+}
+
+function alertOption(item){
+    item.style.color = "#55ec72";
+}
+function normalOption(item){
+    item.style.color = "white";
+}
+
+
+
+var slideIndex = 1;
+showSlides();
+
+var slides = document.getElementById('good').children();
+k(slides);
+
+function showSlides() {
+    setTimeout(showSlides, 9000);
+    nextPicture(findActivePicture());
+}
+
+function dateConvertor(dateString) {
+    const date = dateString.split();
+    const day = date[0];
+    const month = date[1];
+    const year = date[2];
+    if (day.length == 1) {
+        day = "0" + day;
+    }
+    month = month.toUpperCase();
+    switch (month) {
+        case ("IANUARIE"):
+            month = "01";
+            break;
+        case ("FEBRUARIE"):
+            month = "02";
+            break;
+        case ("MARTIE"):
+            month = "03";
+            break;
+        case ("APRILIE"):
+            month = "04";
+            break;
+        case ("MAI"):
+            month = "05";
+            break;
+        case ("IUNIE"):
+            month = "06";
+            break;
+        case ("IULIE"):
+            month = "07";
+            break;
+        case ("AUGUST"):
+            month = "08";
+            break;
+        case ("SEPTEMBRIE"):
+            month = "09";
+            break;
+        case ("OCTOMBRIE"):
+            month = "10";
+            break;
+        case ("NOEMBRIE"):
+            month = "11";
+            break;
+        case ("DECEMBRIE"):
+            month = "12";
+            break;
+        
+    }
+    date = year + "--" + month + "--" + day;
+    return date;
+
+}

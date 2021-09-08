@@ -1,0 +1,157 @@
+.list-box{
+    width: 98%;
+    height:800px;
+    margin:0 auto;
+    margin-top:2%;
+    display:flex;
+    text-align: left;
+}
+.list-left{
+    width:21%;
+    height:97%;
+    margin:1% auto;
+    margin-right: 0;
+}
+.list-right{
+    width:75%;
+    height:97%;
+    margin:1% auto;
+}
+.list-picture{
+    width:100%;
+    height:100%;
+    margin:1% auto;
+}
+.list-image{
+    width:98%;
+    height:45%;
+    margin:1% auto;
+}
+.list-title{
+    width: 98%;
+    height:5%;
+    border-bottom: 1px solid gray;
+    margin:1% auto;
+    margin-top:0.5%;
+}
+.list-title h2{
+    margin-left:30px;
+}
+.list-entries p{
+    margin-left:30px;
+}
+.list-entries ul{
+    margin-left:40px;   
+}
+.list-entries li{
+    margin-top:30px;
+}
+.list-entries{
+    width: 98%;
+    height:91%;
+    border-bottom: 1px solid gray;
+    margin:1% auto;
+}
+.vertical-card{
+    height:10%;
+    width:25%;
+    margin:0 auto;
+}
+.vertical-image{
+    height:100%;
+    width: 100%;
+}
+.vertical-picture{
+    height:100%;
+    width: 100%;
+}
+.vertical-desc{
+    height:50%;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+.vertical-image .description-picture{
+    height:100%;
+    width:100%;
+    margin:0;
+}
+
+.profile-box{
+    width:100%;
+    margin:0 auto;
+    margin-top:2%;
+    display:inline-block;
+    text-align: left;
+}
+.profile-card{
+    width:98%;
+    margin:0 auto;
+    margin-top:1%;
+    display:flex;
+    max-height:240px;
+    border-bottom: 1px solid gray;
+}
+.profile-desc{ 
+    width:98%;
+    margin:0 auto;
+    margin-top:1%;
+    border-bottom: 1px solid gray;
+}
+.profile-contact{
+    width:98%;
+    margin:0 auto;
+    margin-top:1%;
+    display:flex;
+    justify-content:space-between;
+    border-bottom: 1px solid gray;
+}
+.profile-portrait{
+    height:96.5%;
+    width:20%;
+    margin:3px;
+    max-height:200px;
+    max-width:175px;
+}
+.profile-info{
+    height:96.5%;
+    width:70%;
+    margin:3px;
+    margin-left:50px;
+    justify-content:space-between;
+}
+.profile-info-list{
+    width:40%;
+    padding-left:50px;
+}
+.profile-picture{
+    height:85%;
+    width:96.5%;
+    margin:3px;
+    margin-bottom:10px;
+    max-width:170px;
+    height:auto;
+}
+.profile-name{
+    height:7%;
+    width:96.5%;
+    margin:3px;
+    margin-top:0px;
+    text-align:center;
+    max-height:20px;
+}
+.profile-contact .contact-info, .profile-contact .links, .profile-contact .ul{
+    color:black;
+}
+.profile-contact .links{
+    width:20%;
+    margin:0 auto;
+    padding-top:14px;
+
+    height:100%;
+}
+.profile-contact .contact-info{
+    width:80%;
+}
+.profile-person-links{
+    text-align:center;
+}
