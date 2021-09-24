@@ -18,8 +18,8 @@
     if (!empty($numeCompanie)){
         if (!empty($password)){
             $host = "localhost";
-            $dbusername = "emcapital";
-            $dbpassword = "9mB1fAXA1AYUNM8";
+            $dbusername = "***************";
+            $dbpassword = "***************";
             $dbname = "emcapital";
             // Create connection
             $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
